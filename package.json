@@ -2,7 +2,7 @@
   "name": "abjadcompile",
   "main": "./lib/abjadcompile",
   "version": "0.1.0",
-  "description": "A short description of your package",
+  "description": "In-editor illustration of Abjad objects",
   "keywords": [],
   "activationCommands": {
     "atom-workspace": "abjadcompile:toggle"
