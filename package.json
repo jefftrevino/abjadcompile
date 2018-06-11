@@ -1,7 +1,7 @@
 {
   "name": "abjadcompile",
   "main": "./lib/abjadcompile",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "In-editor illustration of Abjad objects",
   "keywords": [],
   "activationCommands": {
