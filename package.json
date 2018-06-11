@@ -1,16 +1,24 @@
 {
   "name": "abjadcompile",
   "main": "./lib/abjadcompile",
-  "version": "0.1.1",
-  "description": "In-editor illustration of Abjad objects",
-  "keywords": [],
+  "version": "0.0.0",
+  "description": "A short description of your package",
+  "keywords": [
+  ],
   "activationCommands": {
-    "atom-workspace": "abjadcompile:toggle"
+    "atom-workspace": [
+        "abjadcompile:toggle",
+        "abjadcompile:convert"
+      ]
   },
   "repository": "https://github.com/jefftrevino/abjadcompile",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "figlet": "1.0.8",
+    "atom-package-deps": "^4.6.2"
+  },
+  "package-deps": ["lilycompile"]
 }
