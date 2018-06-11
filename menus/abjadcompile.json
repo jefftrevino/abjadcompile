@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle abjadcompile",
+        "command": "abjadcompile:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "abjadcompile",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "abjadcompile:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
