@@ -20,8 +20,10 @@ abjadcompile is an Atom package, created and maintained by the [nCoda](www.ncoda
 
 ## Dependencies
 [Atom](https://atom.io/)
-### Atom Package Dependencies
+### Atom Package Dependencies (Automatically Installed)
 [hydrogen](https://atom.io/packages/hydrogen)
+~
+[atlilypond](https://atom.io/packages/atlilypond)
 ~
 [lilycompile](https://atom.io/packages/lilycompile)
 ### Python Dependencies

@@ -19,6 +19,11 @@
   "dependencies": {
     "figlet": "1.0.8",
     "atom-package-deps": "^4.6.2"
+
   },
-  "package-deps": ["lilycompile"]
+  "package-deps": [
+    "lilycompile",
+    "hydrogen",
+    "atlilypond"
+  ]
 }
