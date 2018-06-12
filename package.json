@@ -1,14 +1,15 @@
 {
   "name": "abjadcompile",
   "main": "./lib/abjadcompile",
-  "version": "0.0.0",
+  "version": "0.1.1",
   "description": "A short description of your package",
   "keywords": [
   ],
   "activationCommands": {
     "atom-workspace": [
         "abjadcompile:toggle",
-        "abjadcompile:convert"
+        "abjadcompile:convert",
+        "abjadcompile:compile"
       ]
   },
   "repository": "https://github.com/jefftrevino/abjadcompile",
