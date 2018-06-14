@@ -1,6 +1,7 @@
 {
   "atom-workspace": {
     "ctrl-alt-o": "abjadcompile:toggle",
-    "ctrl-alt-c": "abjadcompile:convert"
+    "ctrl-alt-c": "abjadcompile:convert",
+    "ctrl-alt-a": "abjadcompile:lyToPdf"
   }
 }

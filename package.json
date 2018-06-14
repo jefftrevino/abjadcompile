@@ -5,23 +5,30 @@
   "description": "A short description of your package",
   "keywords": [
   ],
-  "activationCommands": {
-    "atom-workspace": [
-        "abjadcompile:toggle",
-        "abjadcompile:convert",
-        "abjadcompile:compile"
-      ]
-  },
   "repository": "https://github.com/jefftrevino/abjadcompile",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
+
+  "activationCommands": {
+    "atom-workspace": "abjadcompile:lyToPdf"
+  },
+
+  "consumedServices": {
+        "lilycompile": {
+          "description": "renders editor's filepath from .ly to .pdf file in new editor pane",
+          "versions": {
+            "0.7.0": "consumeCompile"
+          }
+        }
+      },
+
   "dependencies": {
     "figlet": "1.0.8",
     "atom-package-deps": "^4.6.2"
-
   },
+
   "package-deps": [
     "lilycompile",
     "hydrogen",
