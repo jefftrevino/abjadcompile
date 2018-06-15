@@ -21,6 +21,12 @@
           "versions": {
             "0.7.0": "consumeCompile"
           }
+        },
+        "hydrogen.provider": {
+          "description": "grabs an instance of hydrogenProvider from Hydrogen",
+          "versions": {
+            "^1.2.0": "consumeHydrogen"
+          }
         }
       },
 
