@@ -30,3 +30,6 @@ abjadcompile is an Atom package, created and maintained by the [nCoda](www.ncoda
 [Abjad](http://abjad.mbrsi.org/)
 ### External Dependencies
 [LilyPond](http://lilypond.org/download.html)
+
+## Development
+To afford extension and further development, the nCoda team tracks the development of this package via its [feature-architecture matrix](https://docs.google.com/spreadsheets/d/1TLB1WLYEYoO5CJQ_23N-_A9qWLOJJ2n_hy9wHgG-cko/edit?usp=sharing), which links each of the features above to an architectural diagram.
