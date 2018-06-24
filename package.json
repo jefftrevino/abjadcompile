@@ -1,7 +1,7 @@
 {
   "name": "abjadcompile",
   "main": "./lib/abjadcompile",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A short description of your package",
   "keywords": [
   ],
@@ -12,7 +12,7 @@
   },
 
   "activationCommands": {
-    "atom-workspace": "abjadcompile:lyToPdf"
+    "atom-workspace": "abjadcompile:attachMiddleware"
   },
 
   "consumedServices": {
