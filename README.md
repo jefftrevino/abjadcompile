@@ -62,4 +62,4 @@ To afford extension and further development, the nCoda team tracks the developme
 Kernel shutdown/restart currently requires window reload, as the plugin thinks middleware is already attached.
 
 ## Props
-The team owes a special thank you to Ben Russert and Nikita Kitaev for their help on this project.
+The team owes a special thank you to [Ben Russert](https://github.com/BenRussert) and [Nikita Kitaev](https://github.com/nikitakit) for their help on this project.
