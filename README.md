@@ -18,7 +18,7 @@ abjadcompile is an Atom package and [Hydrogen plugin](https://nteract.gitbooks.i
 
 (2) Invoke the `abjadcompile: attachMiddleware` command – from [Atom's Command Palette](https://flight-manual.atom.io/getting-started/sections/atom-basics/, keyboard shortcut (`ctrl-alt-m`), contextual (right-click) menu, or "Packages" menu – to insert the Abjad middleware into Hydrogen's kernel communication loop.
 
-(3) Run any code containing `abjad.show(component)`, where `component` is an illustratable Abjad component, and the object will open as a .pdf in a new Atom tab.
+(3) Use Hydrogen's execution commands to run any code containing `abjad.show(component)`, where `component` is an illustratable Abjad component, and the object will open as a .pdf in a new Atom tab.
 
 *N.B. - All .pdf files render to a temporary directory but can be saved to disk by clicking the pdf file's path in the lower-left-hand corner of Atom when the pdf's tab is selected.*
 
