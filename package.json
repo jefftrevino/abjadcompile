@@ -28,6 +28,7 @@
   },
   "package-deps": [
     "lilycompile",
-    "hydrogen"
+    "hydrogen",
+    "pdf-view"
   ]
 }
