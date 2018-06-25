@@ -1,5 +1,5 @@
 # abjadcompile
-abjadcompile is an Atom package, created and maintained by the [nCoda](www.ncodamusic.org) team, that enables in-editor Abjad illustration of Python-generated Lilypond files in the [Atom](https://atom.io/) text editor.
+abjadcompile is an Atom package, created and maintained by the [nCoda](www.ncodamusic.org) team, that enables in-editor Abjad illustration of Python-generated LilyPond files in the [Atom](https://atom.io/) text editor.
 
 ## Installation
 
@@ -12,11 +12,11 @@ abjadcompile is an Atom package, created and maintained by the [nCoda](www.ncoda
 ## Features
 
 ### 1. Illustrate an Abjad object as Lilypond output in a new Atom pane.
-(1) Highlight a line or block of Python code that generates an illustratable Abjad object.
+(1) [Start Hydrogen](https://nteract.gitbooks.io/hydrogen/docs/Usage/GettingStarted.html) in a saved .py file.
 
-(2) Invoke the `abjadcompile: Illustrate` command from [Atom's Command Palette](https://flight-manual.atom.io/getting-started/sections/atom-basics/).
+(2) Invoke the `abjadcompile: attachMiddleware` command from [Atom's Command Palette](https://flight-manual.atom.io/getting-started/sections/atom-basics/) to insert the Abjad middleware into Hydrogen's kernel communication loop.
 
-(3) A new pane should appear, containing the object's illustration.
+(3) Run any code containing `abjad.show(component)` where `component` is an illustratable Abjad component, and the object will open as a .pdf in a new Atom pane.
 
 ## Dependencies
 [Atom](https://atom.io/)
