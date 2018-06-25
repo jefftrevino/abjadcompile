@@ -1,5 +1,5 @@
 # abjadcompile
-abjadcompile is an Atom package, created and maintained by the [nCoda](www.ncodamusic.org) team, that enables in-editor Abjad illustration of Python-generated LilyPond files in the [Atom](https://atom.io/) text editor.
+abjadcompile is an Atom package and [Hydrogen plugin](https://nteract.gitbooks.io/hydrogen/docs/PluginAPI.html), created and maintained by the [nCoda](www.ncodamusic.org) team, that enables [Abjad](http://abjad.mbrsi.org/) to render .pdf files to an [Atom](https://atom.io/) text editor tab. With `abjadcompile`, you can iteratively compose and render scores in a newly integrated development environment.
 
 ## Installation
 
@@ -7,29 +7,45 @@ abjadcompile is an Atom package, created and maintained by the [nCoda](www.ncoda
 
 (2) `pip install abjad` to install [Abjad](http://abjad.mbrsi.org/) into your Python environnment.
 
-(3) Follow the [Atom Flight Manual](https://flight-manual.atom.io/using-atom/sections/atom-packages/)'s instructions to download and install this package from inside Atom.
+(3) `pip install ipython` to install [ipython](https://ipython.org/) into your Python environnment.
+
+(4) Follow the [Atom Flight Manual](https://flight-manual.atom.io/using-atom/sections/atom-packages/)'s instructions to download and install `abjadcompile` from inside Atom (Atom>Preferences>Install>Search for `abjadcompile`, press `install`). Atom should automatically install the package's Node and Atom package dependencies, with your permission.
 
 ## Features
 
-### 1. Illustrate an Abjad object as Lilypond output in a new Atom pane.
+### 1. Render an Abjad component as a .pdf score in a new Atom tab.
 (1) [Start Hydrogen](https://nteract.gitbooks.io/hydrogen/docs/Usage/GettingStarted.html) in a saved .py file.
 
-(2) Invoke the `abjadcompile: attachMiddleware` command from [Atom's Command Palette](https://flight-manual.atom.io/getting-started/sections/atom-basics/) to insert the Abjad middleware into Hydrogen's kernel communication loop.
+(2) Invoke the `abjadcompile: attachMiddleware` command --- from [Atom's Command Palette](https://flight-manual.atom.io/getting-started/sections/atom-basics/, keyboard shortcut (`ctrl-alt-m`), contextual (right-click) menu, or "Packages" menu --- to insert the Abjad middleware into Hydrogen's kernel communication loop.
 
-(3) Run any code containing `abjad.show(component)` where `component` is an illustratable Abjad component, and the object will open as a .pdf in a new Atom pane.
+(3) Run any code containing `abjad.show(component)` where `component` is an illustratable Abjad component, and the object will open as a .pdf in a new Atom tab.
+
+## A Minimal example
+
+```
+# must be saved as something.py
+import abjad
+note = abjad.Note()
+abjad.show(note)
+```
 
 ## Dependencies
-[Atom](https://atom.io/)
-### Atom Package Dependencies (Automatically Installed)
+[atom](https://atom.io/)
+### Node Package Dependencies (Automatically Installed by Atom)
+[atom-package-deps](https://www.npmjs.com/package/atom-package-deps)
+### Atom Package Dependencies (Automatically Installed by Atom-Package-Deps)
 [hydrogen](https://atom.io/packages/hydrogen)
-~
-[atlilypond](https://atom.io/packages/atlilypond)
 ~
 [lilycompile](https://atom.io/packages/lilycompile)
 ### Python Dependencies
-[Abjad](http://abjad.mbrsi.org/)
+[abjad](http://abjad.mbrsi.org/)
+~
+[ipython](https://ipython.org/)
 ### External Dependencies
-[LilyPond](http://lilypond.org/download.html)
+[lilypond](http://lilypond.org/download.html)
 
 ## Development
-To afford extension and further development, the nCoda team tracks the development of this package via its [feature-architecture matrix](https://docs.google.com/spreadsheets/d/1TLB1WLYEYoO5CJQ_23N-_A9qWLOJJ2n_hy9wHgG-cko/edit?usp=sharing), which links each of the features above to an architectural diagram.
+To afford extension and further development, the nCoda team tracks the development of this package via its [feature-architecture matrix](https://docs.google.com/spreadsheets/d/1TLB1WLYEYoO5CJQ_23N-_A9qWLOJJ2n_hy9wHgG-cko/edit?usp=sharing).
+
+## Known Issues
+Kernel shutdown/restart currently requires window reload, as the plugin thinks middleware is already attached.

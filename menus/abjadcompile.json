@@ -2,8 +2,8 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "Toggle abjadcompile",
-        "command": "abjadcompile:toggle"
+        "label": "abjadcompile: attach middleware",
+        "command": "abjadcompile:attachMiddleware"
       }
     ]
   },
@@ -15,8 +15,8 @@
           "label": "abjadcompile",
           "submenu": [
             {
-              "label": "Toggle",
-              "command": "abjadcompile:toggle"
+              "label": "attach middleware",
+              "command": "abjadcompile:attachMiddleware"
             }
           ]
         }

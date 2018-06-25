@@ -1,8 +1,8 @@
 {
   "name": "abjadcompile",
   "main": "./lib/abjadcompile",
-  "version": "0.1.5",
-  "description": "A short description of your package",
+  "version": "0.1.6",
+  "description": "Render algorithmically generated music scores in Atom.",
   "keywords": [],
   "repository": "https://github.com/jefftrevino/abjadcompile",
   "license": "MIT",
@@ -24,12 +24,10 @@
     }
   },
   "dependencies": {
-    "figlet": "1.0.8",
     "atom-package-deps": "^4.6.2"
   },
   "package-deps": [
     "lilycompile",
-    "hydrogen",
-    "atlilypond"
+    "hydrogen"
   ]
 }
