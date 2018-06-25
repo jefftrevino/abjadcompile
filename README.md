@@ -20,8 +20,9 @@ abjadcompile is an Atom package and [Hydrogen plugin](https://nteract.gitbooks.i
 
 (3) Run any code containing `abjad.show(component)`, where `component` is an illustratable Abjad component, and the object will open as a .pdf in a new Atom tab.
 
-## A Minimal Example
+## Examples
 
+### A Minimal Example
 ```
 # must be saved as something.py
 import abjad
@@ -29,10 +30,10 @@ note = abjad.Note()
 abjad.show(note)
 ```
 
-## A Less Minimal Example
+### A Less Minimal Example
 ![abjaddemogif](abjadcompiledemo.gif)
 
-## Maximal Examples
+### Maximal Examples
 [Abjad Score Gallery](http://abjad.mbrsi.org/gallery.html)
 
 ## Dependencies
