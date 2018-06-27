@@ -1,5 +1,5 @@
 # abjadcompile
-abjadcompile is an Atom package and [Hydrogen plugin](https://nteract.gitbooks.io/hydrogen/docs/PluginAPI.html), created and maintained by the [nCoda](www.ncodamusic.org) team, that enables [Abjad](http://abjad.mbrsi.org/) to render .pdf files to an [Atom](https://atom.io/) text editor tab. In tandem with [Hydrogen](https://atom.io/packages/hydrogen)'s line and block execution, abjadcompile enables you to iteratively compose and render scores in a newly flexible and integrated development environment.
+abjadcompile is an Atom package and [Hydrogen plugin](https://nteract.gitbooks.io/hydrogen/docs/PluginAPI.html), created and maintained by the [nCoda](https://ncodamusic.org/) team, that enables [Abjad](http://abjad.mbrsi.org/) to render .pdf files to an [Atom](https://atom.io/) text editor tab. In tandem with [Hydrogen](https://atom.io/packages/hydrogen)'s line and block execution, abjadcompile enables you to iteratively compose and render scores in a newly flexible and integrated development environment.
 
 ## Installation
 
@@ -54,9 +54,6 @@ abjad.show(note)
 [ipython](https://ipython.org/)
 ### External Dependencies
 [lilypond](http://lilypond.org/download.html)
-
-## Development
-To afford extension and further development, the nCoda team tracks the development of this package via its [feature-architecture matrix](https://docs.google.com/spreadsheets/d/1TLB1WLYEYoO5CJQ_23N-_A9qWLOJJ2n_hy9wHgG-cko/edit?usp=sharing).
 
 ## Known Issues
 Kernel shutdown/restart currently requires window reload, as the plugin thinks middleware is already attached.
