@@ -1,7 +1,7 @@
 {
   "name": "abjadcompile",
   "main": "./lib/abjadcompile",
-  "version": "0.1.16",
+  "version": "0.1.17",
   "description": "Render algorithmically generated music scores in Atom.",
   "keywords": [],
   "repository": "https://github.com/jefftrevino/abjadcompile",
