@@ -1,15 +1,13 @@
 # abjadcompile
 abjadcompile is an Atom package and [Hydrogen plugin](https://nteract.gitbooks.io/hydrogen/docs/PluginAPI.html), created and maintained by the [nCoda](https://ncodamusic.org/) team, that enables [Abjad](http://abjad.mbrsi.org/) to render .pdf files to an [Atom](https://atom.io/) text editor tab. In tandem with [Hydrogen](https://atom.io/packages/hydrogen)'s line and block execution, abjadcompile enables you to iteratively compose and render scores in a newly flexible and integrated development environment.
 
-## Installation
+## Installation and Setup
 
-(1) Download and install [Atom](https://atom.io/) and [LilyPond](http://lilypond.org/download.html).
+(1) `pip install abjad` to install [Abjad](http://abjad.mbrsi.org/) into your Python environnment.
 
-(2) `pip install abjad` to install [Abjad](http://abjad.mbrsi.org/) into your Python environnment.
+(2) Follow the [Atom Flight Manual](https://flight-manual.atom.io/using-atom/sections/atom-packages/)'s instructions to download and install `abjadcompile` from inside Atom (Atom>Preferences>Install>Search for `abjadcompile`, press `install`). Atom should automatically install the package's Node and Atom package dependencies, with your permission.
 
-(3) `pip install ipython` to install [ipython](https://ipython.org/) into your Python environnment.
-
-(4) Follow the [Atom Flight Manual](https://flight-manual.atom.io/using-atom/sections/atom-packages/)'s instructions to download and install `abjadcompile` from inside Atom (Atom>Preferences>Install>Search for `abjadcompile`, press `install`). Atom should automatically install the package's Node and Atom package dependencies, with your permission.
+(3) Make sure you can execute Python code via Hydrogen (`command+return`). If you can't, Hydrogen should pop up a failure notifcation with instructions for installing a jupyter kernel, with a couple lines of clipboardable code to run in your Python environment.
 
 ## Features
 
@@ -51,12 +49,12 @@ abjad.show(note)
 ### Python Dependencies
 [abjad](http://abjad.mbrsi.org/)
 ~
-[ipython](https://ipython.org/)
+[ipykernel](https://ipython.readthedocs.io/en/stable/install/kernel_install.html)
 ### External Dependencies
 [lilypond](http://lilypond.org/download.html)
 
 ## Known Issues
-Kernel shutdown/restart currently requires window reload, as the plugin thinks middleware is already attached.
+Kernel shutdown/restart currently requires window reload, as the abjadcompile plugin thinks middleware is already attached.
 
 ## Props
 The team owes a special thank you to [Ben Russert](https://github.com/BenRussert) and [Nikita Kitaev](https://github.com/nikitakit) for their help on this project, and to [Trevor Bača](http://thereddoor.typepad.com/) and [Josiah Wolf Oberholtzer](http://josiahwolfoberholtzer.com/) for Abjad.
