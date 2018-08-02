@@ -13,7 +13,7 @@
     "lilycompile": {
       "description": "renders editor's filepath from .ly to .pdf file in new editor pane",
       "versions": {
-        "0.7.0": "consumeCompile"
+        "^0.9.0": "consumeCompile"
       }
     },
     "hydrogen.provider": {
